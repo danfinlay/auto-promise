@@ -1,5 +1,5 @@
 {
-  "name": "@metamask/module-template",
+  "name": "auto-promise",
   "version": "1.0.0",
   "description": "",
   "publishConfig": {

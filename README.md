@@ -4,7 +4,7 @@ A module for getting [caolan-style](https://caolan.github.io/async/v3/docs.html#
 
 Not yet necessarily stable (still need to add support for concurrency limit), but seems to work so far. Had fun writing it as a meditative challenge, may tighten it up recreationally.
 
-Basically the same design goal as `promise-auto` or `promise-auto2`, except using native language Promises, so it's a bit more modern in style. Also written in TypeScript.
+Basically the same design goal as `promise-auto`, `auto-promise`, or `promise-auto2`, except using native language Promises, so it's a bit more modern in style. Also written in TypeScript. Honestly we all probably did it because writing this module is fun.
 
 ## Usage
 
@@ -16,11 +16,11 @@ It uses:
 
 ## Installation
 
-`auto-promise` is made available as either a CommonJS module, and ES6 module, or an ES5 bundle.
+`auto-promise2` is made available as either a CommonJS module, and ES6 module, or an ES5 bundle.
 
-* ES6 module: `import auto from 'auto-promise'`
-* ES5 module: `const auto = require('auto-promise')`
-* ES5 bundle: `dist/auto-promise.js` (this can be included directly in a page)
+* ES6 module: `import auto from 'auto-promise2'`
+* ES5 module: `const auto = require('auto-promise2')`
+* ES5 bundle: `dist/auto-promise2.js` (this can be included directly in a page)
 
 ## Usage
 You pass `auto()` an object where keys are different tasks, and each task is an array where the last item is an async function to perform, and any preceding entries are string names of other tasks that must be completed first.
